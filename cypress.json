@@ -1,4 +1,6 @@
-{
+{   
+    "baseUrl": "https://serene-mccarthy-e98a45.netlify.app",
+    "chromeWebSecurity": false,
     "viewportWidth": 500,
     "viewportHeight": 800
 }
