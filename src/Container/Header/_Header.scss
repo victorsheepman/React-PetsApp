@@ -1,0 +1,14 @@
+.header{
+    height: 113px;
+    width: 100%;
+    
+    margin-top:32px ;
+
+    &__category{
+        height: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+}

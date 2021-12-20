@@ -1,0 +1,30 @@
+.perfil{
+    @extend .message;
+    &__wrapper{
+        width: 100%;    
+        height: 170px;
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__user{
+        width: 94px;
+        height: 136px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            text-align: center;
+        }
+        figure{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+    }
+    &__button{
+        @include button(155px);
+        height: 148px;
+    }
+}

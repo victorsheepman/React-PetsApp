@@ -1,0 +1,27 @@
+.chat{
+    width: 327px;
+    height: 80px;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 24px;
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__profile{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+    &__body{
+        height: 62px;
+        width: 211px;
+        p:last-child{
+            color: $color-grey;
+        }
+    }
+    &__icon{
+        width: 24px;
+        height: 24px;
+    }
+}

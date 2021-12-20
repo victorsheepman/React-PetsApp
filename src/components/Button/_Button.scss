@@ -1,0 +1,14 @@
+.button{
+    height: 48px;
+    width: 155px;
+    border-radius: 98px;
+    padding: 16px;
+    color: $color-white;
+    background-color:  $color-black;
+    font: $button;
+    border: unset;
+    &--small{
+        @extend .button;
+        width: 155px;
+    }
+}

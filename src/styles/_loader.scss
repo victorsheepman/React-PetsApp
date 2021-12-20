@@ -1,0 +1,106 @@
+.loader{
+
+    position: absolute;
+    background-color:$color-primary;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    animation-name: loader;
+    animation-timing-function: linear;
+    animation-duration: 0.5s;
+    animation-delay: 2.1s;
+    animation-fill-mode: forwards;
+    top: 0;
+    bottom: 0;
+    position: fixed;
+    transform: translateX(0);
+    img{
+        
+        transform: scale(0.2);
+        animation: logo 2s linear forwards;
+    }
+    
+}
+.detalle{
+    @extend .loader;
+    animation: none;
+    flex-direction: column;
+    z-index: 2;
+    
+    //animation: detalle 0.5s linear forwards;
+    &__imagen{
+        width: 327px;
+        height: 327px;
+        img{
+            object-fit: contain;
+        }
+        
+    }
+    &__articulo{
+        width: 327px;
+        height: 129px;
+        text-align: center;
+        p{
+            color: #535353;
+        }
+    }
+    &__button{
+        @include button(327px);
+        margin-top: 10%;
+        transition: 0.2s all ease-in;
+    }
+    &__button:active{
+        //transform: scale(0.8);
+    }
+}
+.historia{
+    @extend .detalle;
+    z-index: 1;
+    &__imagen{
+        @extend .detalle__imagen;
+    }
+    &__articulo{
+        @extend .detalle__articulo;
+        height: 153px;
+    }
+    &__button{
+        @extend .detalle__button;
+    }
+
+}
+@keyframes logo {
+    0%{
+        transform: scale(0.2);
+    }
+    100%{
+        transform: scale(1);
+        display: none;
+    }
+}
+@keyframes loader {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes detalle {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes historia {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}

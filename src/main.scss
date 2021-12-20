@@ -1,0 +1,29 @@
+//GLOBALS STYLES    
+@import './styles/colors';
+@import './styles/fonts';
+@import './styles/base';
+@import './styles/mixins';
+@import './styles/loader';
+
+//COMPONENTS
+@import './components/Button/Button';
+@import './components/Card/_Card';
+@import './components/Category/Category';
+@import './components/Nav/Nav';
+@import './components/Chat/Chat';
+
+@import './components/Personaity/Personality';
+@import './components/User/User';
+@import './components/Character/Character';
+@import './components/ModalUser/ModalUser';
+
+//CONTAINERS
+@import './Container/Header/Header';
+@import './Container/PetList/PetList';
+@import './Container/ModalPet/ModalPet';
+
+//PAGES
+@import './pages/home/Home';
+@import './pages/messages/Messages';
+@import './pages/Fav/Fav';
+@import './pages/perfil/Perfil';

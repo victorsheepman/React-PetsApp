@@ -1,0 +1,85 @@
+@function porcentaje($width){
+    @return  $width * 100%/375;
+};
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: $color-primary;
+   
+}
+
+
+h1{
+    //styleName: Headline/Headline 1;
+    font-family:$font;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+h2{
+   
+    font-family: $font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+.body-1{
+    font: $body1-regular;
+}
+
+.body-1-bold{
+    font: $body1-bold;
+}
+
+.body-2{
+   //styleName: Body 2/Regular;
+    font-family:$font;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0.005em;
+    text-align: left;
+
+}
+.body-2-bold{
+    @extend .body-2;
+    font-weight: 700;
+
+}
+.sub-1{
+    //styleName: Subtitle/Subtitle 1;
+    font-family: $font;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 25px;
+    letter-spacing: 0.0015em;
+    text-align: left;
+
+}
+
+.caption{
+    //styleName: Caption/Caption;
+    font-family: $font;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0.004em;
+    text-align: left;
+
+}

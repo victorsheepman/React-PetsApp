@@ -1,0 +1,26 @@
+.card{
+    height: 250px;
+    width: 45%;
+    max-width: 425px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    position: relative;
+    background-color: $color-black;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+    &__body{
+        width: 100%;
+        position: absolute;
+        border-radius: 16px;
+        padding-left: 12px;
+        top:206px;
+        left: 0;
+        color: $color-white;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 26.42%, #000000 99.33%);
+    }
+}

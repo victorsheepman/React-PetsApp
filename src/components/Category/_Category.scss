@@ -1,0 +1,34 @@
+.category{
+    width:  45%;
+    height: 80px;
+    border-radius: 8px;
+    background-color: $color-black;
+    display: flex;
+    align-items: center;
+    border: unset;
+    p{
+        color: $color-white;
+        margin-left:16px; 
+    }
+    
+    figure{
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: $color-green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8px;
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    opacity: 0.5;
+
+}
+.category__active{
+    @extend .category;
+    opacity: 1;
+}
