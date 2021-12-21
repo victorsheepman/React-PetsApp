@@ -1,8 +1,8 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import { Card } from '../../components/Card/Card';
 import {AppContext} from '../../Context/AppContext';
 
-const PetListPage = () => {
+export const PetList = () => {
     const { category, state} = useContext( AppContext )
     const pets = state;
     const data = pets.filter(e => e.pet === category);
@@ -16,4 +16,3 @@ const PetListPage = () => {
         </div>
     )
 }
-export const PetList=React.memo(PetListPage);

@@ -1,7 +1,6 @@
 import React from 'react'
 
-export const User = () => {
-    return (
+export const User = () => (
         <div className='user'>
             <figure>
                 <img src="assets/images/user-1.jpg" alt="" />
@@ -14,5 +13,5 @@ export const User = () => {
                 Contactar
             </button>
         </div>
-    )
-}
+)
+

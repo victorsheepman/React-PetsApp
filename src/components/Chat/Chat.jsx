@@ -1,7 +1,6 @@
 import React from 'react'
 
-export const Chat = ({setState}) => {
-    return (
+export const Chat = ({setState}) => (
         <div className='chat' onClick={() => setState(true)}>
             <figure className='chat__profile'>
                 <img src="assets/images/user-1.jpg" alt="" />
@@ -16,5 +15,5 @@ export const Chat = ({setState}) => {
                 </svg>
             </figure>
         </div>
-    )
-}
+)
+

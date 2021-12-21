@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-export const Nav = () => {
-    return (
+export const Nav = () => (
         <nav className='nav'>
             <NavLink  className={(navData) => navData.isActive ? "nav__selected" : "nav__a" } to='/'>
                 <figure className='nav__img'>
@@ -32,5 +31,5 @@ export const Nav = () => {
                 <p className='body-2'>Perfil</p>
             </NavLink>
         </nav>
-    )
-}
+)
+

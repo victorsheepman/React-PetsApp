@@ -1,7 +1,6 @@
 import React from 'react'
 
-export const ModalUser = ({setState}) => {
-    return (
+export const ModalUser = ({setState}) => (
         <div className='modaluser'>
             <div className='modaluser__header'>
                 <figure>
@@ -24,5 +23,4 @@ export const ModalUser = ({setState}) => {
             </div> 
             <input type="text"  />
         </div>
-    )
-}
+)

@@ -22,8 +22,19 @@ export const Header = () => {
         <header className='header'>
             <p className='sub-1'>Categorías de mascotas</p>
             <div className='header__category'>
-                <Category  title='Gatos' img='assets/images/Categoria=Gatos.png' state={catShow} onChange={ClickCat}/>
-                <Category  title='Perros' state={dogShow} img='assets/images/Categoria=Perros.png'  type='category__active' onChange={ClickDog}/>
+                <Category  
+                    title='Gatos' 
+                    img='assets/images/Categoria=Gatos.png' 
+                    state={catShow} 
+                    onChange={ClickCat}
+                />
+                <Category  
+                    title='Perros' 
+                    state={dogShow} 
+                    img='assets/images/Categoria=Perros.png'  
+                    type='category__active' 
+                    onChange={ClickDog}
+                />
             </div>
         </header>
     )
